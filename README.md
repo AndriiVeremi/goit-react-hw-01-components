@@ -1,1 +1,1 @@
-<img src="https://i.gyazo.com/a979f731bd3a507857f88a7ffe5d1045.png" alt="goit-react-hw-01-components">
+<a href="https://gyazo.com/6942e03217bf878fc13709629fe6e77f"><img src="https://i.gyazo.com/6942e03217bf878fc13709629fe6e77f.png" alt="goit-react-hw-01-components" width="2560"/></a>

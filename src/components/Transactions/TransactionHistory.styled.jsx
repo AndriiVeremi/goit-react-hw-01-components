@@ -20,6 +20,7 @@ export const TableBody = styled.tbody`
 
 export const TableName = styled.th`
   color: #fff;
+  font-size: 23px;
 `;
 
 export const TableItem = styled.tr`

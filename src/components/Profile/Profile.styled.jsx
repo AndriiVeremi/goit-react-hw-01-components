@@ -5,6 +5,7 @@ export const Container = styled.div`
   border: 2px solid #363434;
   border-radius: 10px;
   width: 300px;
+  margin-top: 50px;
   margin-bottom: 50px;
 `;
 

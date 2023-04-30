@@ -1,27 +1,47 @@
 import PropTypes from "prop-types";
-import css from "./Friends.module.css";
+// import css from "./Friends.module.css";
+import {
+  FriendLis,
+  FriendItem,
+  FriendStatus,
+  FriendImg,
+  FriendText,
+} from './FriendList.styled';
 
 export const FriendList = ({ friends }) => {
   return (
-    <div>
-      <ul className={css.friend_list}>
+    
+      <FriendLis>
         {friends.map(({ avatar, name, id, isOnline }) => {
           return (
-            <li className={css.item} key={id}>
-              <span
-                className={
-                  isOnline
-                    ? ` ${css.online}`
-                    : ` ${css.offline}`
-                }
-              ></span>
-              <img className={css.avatar} src={avatar} alt={name} style={{ width: 48 }} />
-              <p className={css.name}>{name}</p>
-            </li>
+            <FriendItem key={id}>
+              <FriendStatus isOn={isOnline}></FriendStatus>
+              <FriendImg src={avatar} alt={name} style={{ width: 48 }} />
+              <FriendText>{name}</FriendText>
+            </FriendItem>
           );
         })}
-      </ul>
-    </div>
+      </FriendLis>
+    
+  
+    //   <ul className={css.friend_list}>
+    //     {friends.map(({ avatar, name, id, isOnline }) => {
+    //       return (
+    //         <li className={css.item} key={id}>
+    //           <span
+    //             className={
+    //               isOnline
+    //                 ? ` ${css.online}`
+    //                 : ` ${css.offline}`
+    //             }
+    //           ></span>
+    //           <img className={css.avatar} src={avatar} alt={name} style={{ width: 48 }} />
+    //           <p className={css.name}>{name}</p>
+    //         </li>
+    //       );
+    //     })}
+    //   </ul>
+  
   );
 };
 
